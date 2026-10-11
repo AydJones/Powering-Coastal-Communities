@@ -106,6 +106,16 @@ section h2 {
     margin-bottom: 25px;
 }
 
+/* Main Section Headings */
+
+#about > h2,
+#schedule > h2,
+#solutions > h2,
+#newsletter > h2 {
+    font-size: clamp(28px, 3vw, 36px);
+    font-weight: 700;
+}
+
 h3 {
     text-align: center;
 }
@@ -505,6 +515,10 @@ a:active {
 #sdg-video p {
     max-width: 750px;
     margin: 0 auto 25px auto;
+}
+
+#sdg-video h2 {
+    font-size: clamp(26px, 2.5vw, 32px);
 }
 
 .video-container {
