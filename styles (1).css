@@ -1,0 +1,654 @@
+/*** You will not need this file until Unit 3 ***/
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@400;500;700&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 242, 226);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+    background-color: rgb(225, 242, 226);
+
+    /* Customize the default size, color, and font for text */
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Merriweather;
+
+    /* Put space around the edges of the webpage */
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 40px;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+/*** Text ***/
+
+h1 {
+    text-align: center;
+    font-size: clamp(28px, 4vw, 45px);
+    font-weight: 700;
+    white-space: nowrap;
+
+    color: rgb(15, 45, 60);
+
+    border-top: 3px solid rgb(70, 120, 105);
+    border-bottom: 3px solid rgb(70, 120, 105);
+
+    padding: 12px 25px;
+    margin: 10px 0 15px 0;
+
+    text-shadow:
+        1px 1px 0 rgb(170, 185, 180),
+        2px 2px 1px rgb(125, 140, 135);
+}
+
+section h2 {
+    text-align: center;
+
+    color: rgb(35, 55, 85);
+
+    text-decoration: underline;
+    text-decoration-color: rgb(25, 40, 70);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+
+    text-shadow: 1px 1px 0 rgb(185, 195, 205);
+
+    margin-bottom: 25px;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+button {
+    background-color: rgb(7, 163, 64);
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(20, 120, 15);
+}
+
+a:link {
+    color: rgb(20, 120, 15);
+}
+
+a:visited {
+    color: rgb(70, 100, 70);
+}
+
+a:hover {
+    color: rgb(7, 163, 64);
+}
+
+a:active {
+    color: darkgreen;
+}
+
+    /* Example Style, replace with your own! */
+    /* button color */
+    /* text color */
+    /* hides the default border */
+    /* space between button's text and edge */
+    /* curved edges instead of square */
+    /* makes the cursor change when over button */
+  /* Make the button look different when the user hovers over it */
+
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+/*** Header ***/
+
+.header-section {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(225, 242, 226);
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    background-color: rgb(225, 242, 226);
+}
+
+#header-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-subtitle {
+    font-size: clamp(18px, 1.8vw, 23px);
+    color: rgb(45, 65, 95);
+    white-space: nowrap;
+    margin: 0;
+    text-shadow: 1px 1px 0 rgb(190, 200, 210);
+}
+
+.header-location {
+    font-size: clamp(17px, 1.6vw, 21px);
+    color: rgb(55, 80, 95);
+    margin: 5px 0 0 0;
+    text-shadow: 1px 1px 0 rgb(195, 205, 210);
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.header-buttons button {
+    padding: 10px 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.header-item:nth-of-type(1) {
+    width: 100%;
+    text-align: center;
+}
+
+.header-item:nth-of-type(2) {
+    width: 100%;
+    text-align: center;
+}
+
+/*** footer ***/
+ 
+/* Example A: This styles elements with class="header" */
+    
+
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+  /* Example B: This styles elements with class="footer" */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(38, 175, 23);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.footer a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(20, 120, 15);
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    background-color: rgb(15, 90, 10);
+}
+/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
+/*** Navigation bar (navbar) ***/
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(38, 175, 23);
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 15px;
+    background-color: rgb(20, 120, 15);
+    border-radius: 5px;
+}
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+/* About section */
+
+#about > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 35px;
+    width: 100%;
+}
+
+.expect-heading {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Our Focus SDG List */
+
+.sdg-list {
+    max-width: 850px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.sdg-list li {
+    margin-bottom: 24px;
+    padding-left: 8px;
+    line-height: 1.7;
+}
+
+.sdg-list li:last-child {
+    margin-bottom: 0;
+}
+
+.sdg-list b {
+    font-size: 17px;
+    color: rgb(35, 55, 85);
+}
+
+.sdg-list li::marker {
+    color: rgb(38, 175, 23);
+    font-size: 18px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 400;
+    line-height: 1.8;
+    color: rgb(45, 55, 65);
+}
+
+.about-layout .about-image {
+    flex: 1;
+    min-width: 0;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Stack the text and picture on smaller screens */
+@media (max-width: 750px) {
+    .about-layout {
+        flex-direction: column;
+    }
+
+    .about-layout .about-image {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+    white-space: normal;
+    font-size: 28px;
+}
+
+.header-subtitle {
+    white-space: normal;
+}
+
+.bottom-sections {
+    flex-direction: column;
+    gap: 20px;
+}
+}
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.event-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.event-card {
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+.schedule-image {
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/*** Solutions + Newsletter Section ***/
+
+#solutions,
+#newsletter {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+
+/*** SDG Video Section ***/
+
+#sdg-video {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+#sdg-video p {
+    max-width: 750px;
+    margin: 0 auto 25px auto;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+#sdg-video iframe {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 25px auto 0 auto;
+    border: none;
+    border-radius: 12px;
+}
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+#links a {
+    display: block;
+    color: red;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#links a h3 {
+    color: red;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    text-shadow: 1px 1px 0px rgb(160, 110, 110);
+}
+
+#links a p {
+    color: var(--text-color);
+}
+
+.bottom-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    width: 100%;
+
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+#links p,
+#contact p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+#links h2,
+#contact h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+#links h3 {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+/*** Responsive Design ***/
+
+@media (max-width: 600px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .header-section img {
+        width: 150px;
+        height: auto;
+    }
+
+    .navbar ul li {
+        margin: 3px;
+    }
+
+    .navbar ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+
+    .footer a {
+        margin: 2px;
+        padding: 5px 9px;
+        font-size: 12px;
+    }
+}
+
+:root {
+    /* Light Mode */
+    --bg-color: #b0acc6;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
