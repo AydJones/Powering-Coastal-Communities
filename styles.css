@@ -353,6 +353,40 @@ a:active {
     margin-bottom: 20px;
 }
 
+.expect-heading {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+/* Our Focus SDG List */
+
+.sdg-list {
+    max-width: 850px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.sdg-list li {
+    margin-bottom: 24px;
+    padding-left: 8px;
+    line-height: 1.7;
+}
+
+.sdg-list li:last-child {
+    margin-bottom: 0;
+}
+
+.sdg-list b {
+    font-size: 17px;
+    color: rgb(35, 55, 85);
+}
+
+.sdg-list li::marker {
+    color: rgb(38, 175, 23);
+    font-size: 18px;
+}
+
 .about-text {
     flex: 1;
     min-width: 0;
@@ -386,6 +420,20 @@ a:active {
         width: 100%;
         height: auto;
     }
+
+    h1 {
+    white-space: normal;
+    font-size: 28px;
+}
+
+.header-subtitle {
+    white-space: normal;
+}
+
+.bottom-sections {
+    flex-direction: column;
+    gap: 20px;
+}
 }
 
 /*** Schedule Section ***
@@ -439,6 +487,7 @@ a:active {
     font-weight: 400;
 }
 
+
 /*** SDG Video Section ***/
 
 #sdg-video {
@@ -464,6 +513,17 @@ a:active {
     border: none;
     border-radius: 12px;
 }
+
+#sdg-video iframe {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 25px auto 0 auto;
+    border: none;
+    border-radius: 12px;
+}
+
 /*** Links Section ***
   
   Purpose:
